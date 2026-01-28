@@ -62,3 +62,9 @@ console.log("Tipo de dato symbol");
 console.log(id);
 console.log(typeof id);
 
+/* Se pone; al final de cada linea de codigo
+Por buenas practicas y evitar errores */
+
+let a = "pera";
+let fruta = "mango"; //  Usar nombres descrioptivos en las variables
+
