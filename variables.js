@@ -60,3 +60,10 @@ console.log(valor + 2);
 valor = valor + 5;
 
 console.log(valor);
+
+// OIperadores combinados contadores
+valor 1 += 4;
+
+valor2 -=8;
+
+
