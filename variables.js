@@ -62,7 +62,7 @@ valor = valor + 5;
 console.log(valor);
 
 // OIperadores combinados contadores
-valor 1 += 4;
+//valor 1 += 4;
 
 valor2 -=8;
 

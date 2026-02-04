@@ -30,3 +30,25 @@ if (edad >=18 && tieneIne){
 }else{
     console.log("No puedes votar");
 }
+
+
+let numero = prompt("Ingresa un numero");
+
+numero = parseInt(numero);
+
+// Si querremis preguntar si es divisible o no entre 2
+if (numero % 2 === 0){
+
+}else{
+    console.log("No es divisible entre 2");
+}
+
+let esPremium = true;
+let totalCompras = 350;
+let esFinDeSemana = false;
+
+if  (esPremium || (totalCompras > 1000 && esFinDeSemana)){
+    console.log("Descuento aplicado");
+}else {
+    console.log("No aplica descuento");
+}
