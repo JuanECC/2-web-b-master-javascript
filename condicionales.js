@@ -32,7 +32,7 @@ if (edad >=18 && tieneIne){
 }
 
 
-let numero = prompt("Ingresa un numero");
+let numero = 1;
 
 numero = parseInt(numero);
 
