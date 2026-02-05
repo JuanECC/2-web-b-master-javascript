@@ -81,3 +81,5 @@ for (let i = 0; i <listaSuper3.length; i++){
 }
 
 console.log("Total de productos: " + listaSuper3.length);
+
+

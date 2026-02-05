@@ -26,3 +26,4 @@ if (nota >= 90){
 }else if(nota < 60){
     console.log("Reprobado")
 } 
+
