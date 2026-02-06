@@ -81,3 +81,52 @@ setTimeout (function(){
 Tiene logica grande
 Necesita ser testeada
 Se necesita claridad*/
+
+function mascotas(){
+  console.log("Nombre de las mascotas:", a + b + c)
+}
+
+mascotas("Luna", "Max", "Bella"); // No funciona porque la funcion mascotas no tiene parametros definidos para recibir los argumentos, por lo tanto a, b y c no estan definidos dentro de la funcion mascotas.
+
+/// 3 funciones 
+
+//Funcion para calcular el area de un triangulo
+
+//Funcion para verificar si un numero es par o impar
+
+// Funcion para generar numeros fibonacci 
+
+
+function areaTriangulo(base, altura){
+  return (base * altura) / 2;
+} 
+console.log("Area del triangulo:", areaTriangulo(5, 10));
+
+
+function esPar(numero){
+  if (numero % 2 === 0){
+   console.log("El numero es par");
+   return true;
+
+  } else {
+    return false;
+  } 
+
+}
+
+console.log("El numero es par?", esPar(4));
+console.log("El numero es par?", esPar(7));
+
+function fibonacci(n){
+  let a = 0, b = 1, siguiente;
+  let serie = [a, b]; 
+  for (let i = 2; i < n; i++){
+    siguiente = a + b;
+    serie.push(siguiente);
+    a = b;
+    b = siguiente;
+  }
+  return serie;
+} 
+console.log("Serie Fibonacci:", fibonacci(10));
+
