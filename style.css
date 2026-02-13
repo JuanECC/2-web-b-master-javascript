@@ -1,0 +1,18 @@
+#caja{
+background-color: blueviolet;
+width: 300px;
+height: 200px;
+}
+
+.caja{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+.activa{
+    background-color: blueviolet;
+    transform: scale(1.1);
+    
+
+}
