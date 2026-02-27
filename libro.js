@@ -27,7 +27,6 @@ const libro = {
     }
 };
 
-// Ejemplo de uso
 libro.describirLibro();
 
 libro.agregarCapitulo("Capítulo 1: Macondo");
