@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz de Organización</title>
+</head>
+<body>
+
+<h1>Matriz de Organización de Tareas</h1>
+
+<input type="text" id="actividad" placeholder="Escribe una actividad">
+
+<select id="categoria">
+    <option value="urgente">Actividades urgentes</option>
+    <option value="importante"> Actividades importantes</option>
+    <option value="despues">Para después</option>
+    <option value="semana"> Para la siguiente semana</option>
+</select>
+
+<button onclick="agregarTarea()">Agregar</button>
+
+<hr>
+
+<h2>Actividades urgentes</h2>
+<ul id="urgente"></ul>
+
+<h2> Actividades importantes</h2>
+<ul id="importante"></ul>
+
+<h2> Para después</h2>
+<ul id="despues"></ul>
+
+<h2> Para la siguiente semanaF </h2>
+<ul id="semana"></ul>
+
+<script>
+function agregarTarea() {
+    let texto = document.getElementById("actividad").value;
+    let categoria = document.getElementById("categoria").value;
+
+    if (texto === "") {
+        alert("Escribe una actividad");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = texto + " ";
+
+    let boton = document.createElement("button");
+    boton.textContent = "Eliminar";
+    boton.onclick = function() {
+        li.remove();
+    };
+
+    li.appendChild(boton);
+
+    document.getElementById(categoria).appendChild(li);
+
+    document.getElementById("actividad").value = "";
+}
+</script>
+
+</body>
+</html>
